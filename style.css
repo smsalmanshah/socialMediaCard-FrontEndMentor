@@ -10,3 +10,94 @@
 - Grey: hsl(0, 0%, 20%)
 - Dark Grey: hsl(0, 0%, 12%)
 - Off Black: hsl(0, 0%, 8%) */
+
+
+:root{
+
+    --background-color:hsl(0, 0%, 8%);
+    --highlight-color: hsl(75, 94%, 57%);
+    --card-background:hsl(0, 0%, 12%);
+    --button-color:hsl(0, 0%, 20%);
+    
+    --text-color:hsl(0, 0%, 100%);
+
+
+    --border-rounding:5px;
+
+}
+
+body{
+    background-color: var(--background-color);
+    color:var(--text-color);
+    font-family:'Inter',sans-serif;
+    height:100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    width:22%;
+    height:fit-content;
+    margin: 0 auto ;
+    padding:40px 2.5rem;
+    background-color: var(--card-background);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:var(--border-rounding);
+    text-align:center;
+
+}
+
+.card img{
+    border-radius: 100%;
+    width:30%;
+    margin-bottom:14px;
+    
+}
+
+h2{
+    font-size:24px;
+    font-weight: 700;
+    margin:32px 0 14px 0;
+    
+
+}
+
+h3{
+    font-size:14px;
+    font-weight: 600;
+    color:var(--highlight-color);
+    margin: 4px 0;
+}
+
+p{
+    font-size:14px;
+    margin:28px 0;
+}
+.socialLinks{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin:0px;
+    gap:16px;
+}
+button{
+    border-radius:calc(var(--border-rounding)/2);
+    background-color: var(--button-color);
+    border:none;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0;
+    color:inherit;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight:inherit;
+}
+
+button:hover{
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    cursor:pointer;
+}
+
